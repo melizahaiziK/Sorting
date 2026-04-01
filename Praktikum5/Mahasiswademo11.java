@@ -25,7 +25,6 @@ public class Mahasiswademo11 {
 
             System.out.print("IPK   : ");
             double ipk = Double.parseDouble(sc.nextLine());
-            sc.nextLine();
 
             Mahasiswa11 m = new Mahasiswa11(nim, nama, kelas, ipk);
             list.tambah(m);
