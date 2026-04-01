@@ -47,9 +47,9 @@ void selectionSort(){
 void insertionSort(){
     for (int i=1; i<listMhs.length; i++){
         Mahasiswa11 temp = listMhs[i];
-        int j=i;
-        while (j>0 && listMhs[j-1].ipk>temp.ipk){
-            listMhs[j]=listMhs[j-1];
+        int j=i-1;
+        while (j>0 && listMhs[j].ipk<temp.ipk){
+            listMhs[j+1]=listMhs[j];
             j--;
         }
         listMhs[j]=temp;
