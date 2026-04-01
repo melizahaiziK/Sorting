@@ -1,7 +1,11 @@
 package Praktikum5;
 public class MahasiswaBerprestasi11 {
-    Mahasiswa11 [] listMhs= new Mahasiswa11[5];
+    Mahasiswa11 [] listMhs;
     int idx;
+
+    MahasiswaBerprestasi11(int jumlah) {
+        listMhs=new Mahasiswa11[jumlah];
+    }
 void tambah (Mahasiswa11 m){
     if (idx<listMhs.length){
         listMhs[idx]=m;
